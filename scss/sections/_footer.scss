@@ -1,0 +1,25 @@
+.footer {
+    padding: 20px 0;
+    background-color: #fafafa;
+    &__body {
+        display: flex;
+        justify-content: center;
+        p {
+            font-family: 'oswald', sans-serif;
+            font-weight: 400;
+            span {
+                color: #eb971a;
+            }
+        }
+    }
+    a {
+        display: block;
+        text-align: center;
+        margin: 0;
+        color: #eb971a;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 18px;
+        font-family: 'oswald';
+    }
+}

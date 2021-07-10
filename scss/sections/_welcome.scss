@@ -1,0 +1,153 @@
+.welcome {
+    padding: 100px 0 50px;
+    background: #fff url(assets/img/new-bg.jpg) top right fixed;
+    background-repeat: no-repeat;
+    margin-top: -100px;
+    &__body {
+        display: flex;
+        justify-content: flex-start;
+        max-width: 730px;
+    }
+
+    &__textbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-family: 'oswald', sans-serif;
+        font-size: 24px;
+        margin-bottom: 10px;
+        line-height: 1.1;
+        text-transform: uppercase;
+        h1 { 
+            margin: 0;
+        }
+    }
+
+    &__text {
+        font-size: 24px;
+        font-family: 'oswald', sans-serif;
+        margin-bottom: 20px;
+        line-height: 1.2;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        box-sizing: border-box;
+        img {
+            max-width: 50px;
+            width: 100%;
+        }
+        p {
+            font-size: 18px;
+            padding-left: 10px;
+            font-family: 'oswald', sans-serif;
+        }
+    }
+
+    &__action {
+    }
+
+    &__action-offer {
+        display: flex;
+        align-items: flex-end;
+        p {
+            padding-right: 10px;
+            font-family: 'oswald', sans-serif;
+            font-size: 24px;
+            color: #000;
+        }
+    }
+
+    &__btn {
+        button {
+            border: none;
+            font-size: 18px;
+            color: #000;
+            font-family: 'oswald', sans-serif;
+            outline: none;
+            background-color: #FFDB48;
+            padding: 20px 60px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+.breaker {
+padding: 10px 0;
+    &__body {
+        display: flex;
+        justify-content: center;
+        p {
+            text-align: center;
+            font-size: 24px;
+            font-family: 'oswald', sans-serif;
+            font-weight: 600;
+            color: #000;
+            line-height: 1.5;
+            margin: 0;
+            span {
+                color: #FFDB48;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+
+@media (max-width:1024px) {
+    .welcome {
+        background-size: cover;
+        background: #fff url(assets/img/new-bg.jpg) top left fixed;
+    }
+}
+@media (max-width:768px) {
+    .welcome {
+        &__title {
+            font-size: 18px;
+            max-width: 500px;
+        }
+        &__text {
+            font-size: 18px;
+        }
+        &__card {
+            p {
+                font-size: 14px;
+            }
+            img {
+                max-width: 40px;
+            }
+        }
+        &__action-offer p {
+            font-size: 18px;
+        }
+        &__btn button{
+            font-size: 16px;
+        }
+    }
+    .breaker {
+        &__body {
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
